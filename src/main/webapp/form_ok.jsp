@@ -19,7 +19,6 @@
     String isCheck = request.getParameter("isCheck");
     String isCheckMSG = "";
     if(isCheck.equals("1")) isCheckMSG = "Check me out 체크됨!";
-    else isCheckMSG = "Check me out 체크 안됨!";
 %>
 <html>
 <head>
@@ -33,6 +32,6 @@ Address2: <%=address2%> <br />
 City: <%=city%> <br />
 State: <%=state%> <br />
 Zip: <%=zip%> <br />
-isCheck: <%=isCheck%> <br />
+<%=isCheckMSG%> <br />
 </body>
 </html>
