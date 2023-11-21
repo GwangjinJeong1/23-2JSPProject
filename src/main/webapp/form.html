@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <title>Title</title>
+</head>
+<body>
+<div class="container">
+  <h1>사용자 추가</h1>
+</div>
+<form class="row g-3" action="form_ok.jsp" method="post">
+  <div class="col-md-6">
+    <label for="inputEmail" class="form-label">Email</label>
+    <input type="email" class="form-control" id="inputEmail" name="email">
+  </div>
+  <div class="col-md-6">
+    <label for="inputPassword" class="form-label">Password</label>
+    <input type="password" class="form-control" id="inputPassword" name="password">
+  </div>
+  <div class="col-md-6">
+    <label for="inputName" class="form-label">Name</label>
+    <input type="text" class="form-control" id="inputName" name="name">
+  </div>
+  <div class="col-md-6">
+    <label for="inputId" class="form-label">Student Id</label>
+    <input type="text" class="form-control" id="inputId" name="stdId">
+  </div>
+  <div class="col-md-6">
+    <label class="form-label">Sex: </label>
+    <input type="radio" id="inputMale" name="sex" value="Male">
+    <label for="inputMale" class="form-label">Male</label>
+    <input type="radio" id="inputFemale" name="sex" value="Female">
+    <label for="inputFemale" class="form-label">Female</label>
+    <label class="form-label">Grade: </label>
+    <input type="radio" id="inputGrade1" name="grade" value="1학년">
+    <label for="inputGrade1" class="form-label">1학년</label>
+    <input type="radio" id="inputGrade2" name="grade" value="2학년">
+    <label for="inputGrade2" class="form-label">2학년</label>
+    <input type="radio" id="inputGrade3" name="grade" value="3학년">
+    <label for="inputGrade3" class="form-label">3학년</label>
+    <input type="radio" id="inputGrade4" name="grade" value="4학년">
+    <label for="inputGrade4" class="form-label">4학년</label>
+  </div>
+  <div class="col-md-6">
+    <label for="inputHome" class="form-label">City</label>
+    <input type="text" class="form-control" id="inputHome" name="home">
+  </div>
+  <div class="col-md-4">
+    <label for="inputDorm" class="form-label">Dormitory</label>
+    <select id="inputDorm" class="form-select" name="dorm">
+      <option selected>손양원</option>
+      <option>토레이</option>
+      <option>열송학사</option>
+      <option>장기려</option>
+      <option>카마이클</option>
+      <option>카이퍼</option>
+    </select>
+  </div>
+  <div class="col-md-2">
+    <label for="inputRoom" class="form-label">Room</label>
+    <input type="number" class="form-control" id="inputRoom" name="room">
+  </div>
+  <div class="col-md-6">
+    <label for="inputMajor" class="form-label">State</label>
+    <select id="inputMajor" class="form-select" name="major">
+      <option selected>글로벌리더십학부</option>
+      <option>전산전자공학부</option>
+    </select>
+  </div>
+
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck" name="isCheck" value="1">
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
+    </div>
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Sign in</button>
+  </div>
+</form>
+</body>
+</html>

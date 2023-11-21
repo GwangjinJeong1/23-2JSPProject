@@ -11,11 +11,14 @@
 
     String email = request.getParameter("email");
     String password = request.getParameter("password");
-    String address = request.getParameter("address");
-    String address2 = request.getParameter("address2");
-    String city = request.getParameter("city");
-    String state = request.getParameter("state");
-    String zip = request.getParameter("zip");
+    String name = request.getParameter("name");
+    String stdId = request.getParameter("stdId");
+    String sex = request.getParameter("sex");
+    String grade = request.getParameter("grade");
+    String dorm = request.getParameter("dorm");
+    int room = Integer.parseInt(request.getParameter("room"));
+    String major = request.getParameter("major");
+    String home = request.getParameter("home");
     String isCheck = request.getParameter("isCheck");
     String isCheckMSG = "";
     if(isCheck.equals("1")) isCheckMSG = "Check me out 체크됨!";
@@ -27,11 +30,14 @@
 <body>
 Email: <%=email%> <br />
 Password: <%=password%> <br />
-Address: <%=address%> <br />
-Address2: <%=address2%> <br />
-City: <%=city%> <br />
-State: <%=state%> <br />
-Zip: <%=zip%> <br />
+Name: <%=name%> <br />
+Student Id: <%=stdId%> <br />
+Sex: <%=sex%> <br />
+Grade: <%=grade%> <br />
+Dormitory: <%=dorm%> <br />
+Room: <%=room%> <br />
+Major: <%=major%> <br />
+Hometown: <%=home%> <br />
 <%=isCheckMSG%> <br />
 </body>
 </html>
